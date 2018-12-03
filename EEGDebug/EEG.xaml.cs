@@ -214,6 +214,7 @@ namespace EEGDebug
             thread1.Abort();
             thread2.Abort();
             Thread.Sleep(100);
+            MainWindow.serialPort1.ReadExisting();
             MainWindow.mainWindow.Show();
         }
     }
