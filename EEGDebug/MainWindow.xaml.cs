@@ -804,10 +804,10 @@ namespace EEGDebug
             switch (comboBox_testSignal_amplitude.SelectedIndex)
             {
                 case 0:
-                    regValue[2] &= 0xF7;
+                    regValue[2] &= 0xFC;
                     break;
                 case 1:
-                    regValue[2] |= 0x08;
+                    regValue[2] |= 0x04;
                     break;
             }
             // 频率

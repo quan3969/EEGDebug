@@ -7,127 +7,89 @@
         xmlns:local="clr-namespace:EEGDebug"
         mc:Ignorable="d"
         Title="EEG" Height="700" Width="800" Closing="Window_Closing">
-    <StackPanel>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHOne}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch1" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHTwo}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch2" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHThree}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch3" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHFour}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch4" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Series="{Binding CHFive}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch5" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHSix}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch6" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Grid.Column="0" Series="{Binding CHSeven}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch7" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="0*" />
-            </Grid.ColumnDefinitions>
-            <lvc:CartesianChart Series="{Binding CHEight}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" Height="80" >
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-            </lvc:CartesianChart>
-            <TextBox x:Name="textBox_ch8" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Width="100" IsReadOnly="True"/>
-        </Grid>
-        
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- CH1 -->
+        <lvc:CartesianChart Grid.Row="0" Series="{Binding CHOne}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH2 -->
+        <lvc:CartesianChart Grid.Row="1" Series="{Binding CHTwo}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH3 -->
+        <lvc:CartesianChart Grid.Row="2" Series="{Binding CHThree}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False" ></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False" ></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH4 -->
+        <lvc:CartesianChart Grid.Row="3" Series="{Binding CHFour}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH5 -->
+        <lvc:CartesianChart Grid.Row="4" Series="{Binding CHFive}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH6 -->
+        <lvc:CartesianChart Grid.Row="5" Series="{Binding CHSix}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH7 -->
+        <lvc:CartesianChart Grid.Row="6" Series="{Binding CHSeven}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <!-- CH8 -->
+        <lvc:CartesianChart Grid.Row="7" Series="{Binding CHEight}" DisableAnimations="True" Hoverable="False" DataTooltip="{x:Null}" >
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis ShowLabels="False"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+
+    </Grid>
 </Window>
