@@ -69,9 +69,6 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="InteractiveDataDisplay.WPF, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InteractiveDataDisplay.WPF.1.0.0\lib\net452\InteractiveDataDisplay.WPF.dll</HintPath>
-    </Reference>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
     </Reference>
@@ -154,7 +151,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="EEGDebug_TemporaryKey.pfx" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
